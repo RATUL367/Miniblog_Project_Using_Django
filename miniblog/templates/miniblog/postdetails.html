@@ -1,0 +1,11 @@
+{% extends 'miniblog/base.html' %}
+{% load static %}
+{% block content %}
+<div class="col-sm-10">
+    <h3 class="text-white my-5">Post Details</h3>
+</div>
+<div class="container">
+    <h2>{{post.title}}</h2>
+    <p>{{post.desc|safe}}</p>
+</div>
+{% endblock content %}
